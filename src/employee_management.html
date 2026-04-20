@@ -14,7 +14,7 @@
 
 <div id="positionFilter" style="display:none;"></div>
 
-<button onclick="seeAll()">See all</button>
+<button id="seeAllBtn">See all</button>
 <button onclick="openAddModal()">Add new</button>
 
 <table border="1">
@@ -27,6 +27,8 @@
         <th>Address</th>
         <th>Account</th>
         <th>Position</th>
+        <th>Start date</th>
+        <th>End date</th>
     </tr>
     </thead>
     <tbody id="tableBody"></tbody>
@@ -36,5 +38,9 @@
 
 <button id="editBtn" disabled>Edit</button>
 <button id="deleteBtn" disabled>Delete</button>
+
+<script src="Load_data.js"></script>
+<script src="See_all.js"></script>
+
 </body>
 </html>
