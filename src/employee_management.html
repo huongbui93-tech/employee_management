@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee management</title>
+</head>
+<body>
+<input id="searchInput" placeholder="Search..." />
+
+<label>
+    <input type="checkbox" id="togglePosition" />
+    Search by position
+</label>
+
+<div id="positionFilter" style="display:none;"></div>
+
+<button onclick="seeAll()">See all</button>
+<button onclick="openAddModal()">Add new</button>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>BirthYear</th>
+        <th>Address</th>
+        <th>Account</th>
+        <th>Position</th>
+    </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<div id="pagination"></div>
+
+<button id="editBtn" disabled>Edit</button>
+<button id="deleteBtn" disabled>Delete</button>
+</body>
+</html>
