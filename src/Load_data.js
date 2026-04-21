@@ -32,11 +32,13 @@ function joinData() {
         };
     });
 }
-
 function render() {
     const tbody = document.getElementById("tableBody");
+    const start = (currentPage - 1) * 10;
+    const end = start + 10;
 
-    tbody.innerHTML = filtered.map(e => `
+    const pageData = filtered.slice(start, end);
+    tbody.innerHTML = pageData.map(e => `
         <tr>
             <td></td>
             <td>${e.id}</td>
@@ -49,4 +51,5 @@ function render() {
             <td>${e.endDate || "Đang làm"}</td>
         </tr>
     `).join("");
+    renderPagination();
 }
