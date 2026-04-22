@@ -39,7 +39,6 @@ function joinData() {
 }
 
 function render() {
-    joinData();
     const tbody = document.getElementById("tableBody");
     const start = (currentPage - 1) * 10;
     const end = start + 10;

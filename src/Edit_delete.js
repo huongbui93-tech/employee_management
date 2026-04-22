@@ -50,7 +50,7 @@ document.getElementById("saveEdit").addEventListener("click", function () {
     emp.account_no = newAccount;
 
     closeModal();
-    render();
+    search();
 });
 
 // ================= DELETE =================
@@ -68,7 +68,7 @@ function deleteSelected() {
     window.selectedIds = selectedIds;
     window.employees = employees;
 
-    render();
+    search();
 }
 
 // ================= BIND BUTTON =================

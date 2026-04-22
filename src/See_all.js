@@ -1,13 +1,18 @@
-console.log("JS loaded");
 function seeAll() {
     if (!window.dataLoaded) {
         alert("Data chưa load xong");
         return;
     }
 
-    filtered = [...filtered].sort((a, b) => b.id - a.id);
-    currentPage = 1;
-    render();
-}
+    // reset UI
+    document.getElementById("searchInput").value = "";
 
-document.getElementById("seeAllBtn").addEventListener("click", seeAll);
+    const filterToggle = document.getElementById("filterPositionToggle");
+    const positionContainer = document.getElementById("positionFilter");
+
+    if (filterToggle) filterToggle.checked = false;
+    if (positionContainer) positionContainer.style.display = "none";
+
+    // 🔥 QUAN TRỌNG: gọi lại search()
+    search();
+}
