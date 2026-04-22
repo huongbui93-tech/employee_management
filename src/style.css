@@ -1,0 +1,130 @@
+/* ===== RESET ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 20px;
+    color: #333;
+}
+
+/* ===== INPUT + FILTER ===== */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 6px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 8px 14px;
+    margin: 5px 5px 10px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* ===== CHECKBOX ===== */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ===== PAGINATION ===== */
+#pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#pagination button {
+    background: #ddd;
+    color: #333;
+}
+
+#pagination button.active {
+    background: #4CAF50;
+    color: white;
+}
+
+/* ===== MODAL ===== */
+#editModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#editModal h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* overlay nền mờ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+}
+
+/* ===== POSITION FILTER ===== */
+#positionFilter {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
