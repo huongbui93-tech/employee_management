@@ -20,7 +20,9 @@
 <table border="1">
     <thead>
     <tr>
-        <th></th>
+        <th>
+            <input type="checkbox" id="checkAll">
+        </th>
         <th>ID</th>
         <th>Name</th>
         <th>BirthYear</th>
@@ -39,8 +41,23 @@
 <button id="editBtn" disabled>Edit</button>
 <button id="deleteBtn" disabled>Delete</button>
 
+<!-- Modal -->
+<div id="editModal" style="display:none; position:fixed; top:20%; left:30%; background:#fff; padding:20px; border:1px solid #ccc;">
+    <h3>Edit Employee</h3>
+
+    <input type="text" id="editName" placeholder="Name"><br><br>
+    <input type="number" id="editBirthYear" placeholder="Birth Year"><br><br>
+    <input type="text" id="editProvince" placeholder="Province"><br><br>
+    <input type="text" id="editCity" placeholder="City"><br><br>
+    <input type="text" id="editAccount" placeholder="Account"><br><br>
+
+    <button id="saveEdit">Save</button>
+    <button onclick="closeModal()">Cancel</button>
+</div>
+
 <script src="Load_data.js"></script>
 <script src="See_all.js"></script>
 <script src="pagination.js"></script>
+<script src="Edit_delete.js"></script>
 </body>
 </html>
