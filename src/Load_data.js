@@ -20,6 +20,7 @@ async function loadData() {
 
     joinData();
     render();
+    window.dataLoaded = true;
 }
 
 loadData();
